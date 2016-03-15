@@ -8,7 +8,7 @@
 \description{
 Performs a permutation test on the difference between two location parameters,
 a permutation correlation test, a permutation F-test, the Siegel-Tukey test, 
-a root mean deviance test.
+a ratio mean deviance test.
 Also performs some graphing techniques, such as for confidence intervals,
 vector addition, and Fourier analysis; and includes functions related to the
 Laplace (double exponential) and triangular distributions.
@@ -24,7 +24,7 @@ The DESCRIPTION file:
 \item{\code{\link{perm.f.test}} performs a permutation F-test and a one-way analysis of variance F-test.}
 \item{\code{\link{perm.test}} performs one-sample and two-sample permutation tests on vectors of data.}
 \item{\code{\link{rmd.test}} performs a permutation test based on the estimated RMD,
-the ratio of the absolute value of the mean deviances, using two datasets.}
+the ratio of the mean of the absolute value of the deviances, using two datasets.}
 \item{\code{\link{siegel.test}} performs the Siegel-Tukey test using two datasets.}
 }
 \strong{(II)} Confidence intervals

@@ -1,8 +1,8 @@
 \name{rmd.test}
 \alias{rmd.test}
-\title{Root Mean Deviance Test}
+\title{Ratio Mean Deviance Test}
 \description{A permutation test is performed based on the estimated RMD,
-the ratio of the absolute value of the mean deviances, for data \code{x} and \code{y}.
+the ratio of the mean of the absolute value of the deviances, for data \code{x} and \code{y}.
 }
 \usage{
 rmd.test(x, y, alternative = c("two.sided", "less", "greater"), all.perms = TRUE, 
@@ -36,7 +36,7 @@ rmd.test( c(13, 34, 2, 19, 49, 63), c(17, 29, 22) )
 rmd.test( c(13, 34, 2, 19, 49, 63), c(17, 29, 22), "greater" )
 }
 
-\keyword{ Root Mean Deviance test }
+\keyword{ Ratio Mean Deviance test }
 \keyword{ Siegel-Tukey test }
 \keyword{ Ansari-Bradley test }
 \keyword{ permutation test }
