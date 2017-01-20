@@ -8,13 +8,14 @@ Laplace (Double Exponential) Quantile Function
 Laplace (double exponential) quantile function with mean equal to \code{mean} and standard deviation equal to \code{sd}.
 }
 \usage{
-qlaplace(p, mean = 0, sd = 1)
+qlaplace(p, mean = 0, sd = 1, lower.tail = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{p}{Vector of probabilities.}
   \item{mean}{Population mean.}
   \item{sd}{Population standard deviation.}
+  \item{lower.tail}{Logical; if \code{TRUE} (default), probabilities are \eqn{P[X \le x]}; otherwise, \eqn{P[X > x]}.}
 }
 \details{The Laplace distribution has density
 \eqn{e^{-|x-\mu| \sqrt{2} / \sigma} / (\sigma \sqrt{2}),}

@@ -11,10 +11,10 @@ perm.f.test(response, treatment = NULL, num.sim = 20000)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{response}{Numeric vector of responses if treatment is not \code{NULL}.
-               If \code{treatment} is \code{NULL}, then \code{response} must be an N by 2 matrix,
+               If \code{treatment} is \code{NULL}, then \code{response} must be an N by 2 data frame or matrix,
                such that the first column represents response and the second column represents treatment.}
   \item{treatment}{Vector of treatments, which need not be numerical.
-      code{treatment} should be set to \code{NULL} if \code{response} is an N by 2 matrix.}
+               If \code{response} is an N by 2 data frame or matrix, then \code{treatment} should be set to \code{NULL}.}
   \item{num.sim}{The number of simulations performed.
               If \code{num.sim} is smaller than one, then the permutation test is not performed.}
 }

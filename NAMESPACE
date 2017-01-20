@@ -1,6 +1,6 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("graphics", "abline", "axis", "curve", "plot", "hist")
-importFrom("stats", "dbinom", "pbinom", "quantile", "runif", "rexp", "plot.ecdf", 
+importFrom("stats", "dnorm", "dbinom", "pbinom", "quantile", "runif", "rexp", "plot.ecdf", 
            "t.test", "aov", "cor", "ansari.test", "pnorm", "pexp", "pcauchy",
            "pt", "pchisq", "pf", "punif", "pgeom", "ppois")
 importFrom("graphics", "lines")

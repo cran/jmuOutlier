@@ -9,5 +9,6 @@ function(x, mean=0, sd=1) {
   if (!is.numeric(mean))  stop("'mean' must be numeric.")
   if (!is.numeric(sd))  stop("'sd' must be numeric.")
   if (sd<0)  stop("'sd' cannot be negative.")
+  if (sd==0)  return( dnorm(x, mean, 0) )
   exp(-abs(x-mean)*sqrt(2)/sd)/(sd*sqrt(2))
 }

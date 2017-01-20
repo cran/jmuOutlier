@@ -12,6 +12,7 @@ function(q, mean=0, sd=1, lower.tail=TRUE) {
   if (!is.numeric(sd))  stop("'sd' must be numeric.")
   if (sd<0)  stop("'sd' cannot be negative.")
   if (!is.logical(lower.tail))  stop("'lower.tail' must be logical.")
+  if (sd==0)  return( pnorm(q, mean, 0, lower.tail) )
   p=(q>mean) - ((q>mean)*2-1) * exp(-abs(q-mean)*sqrt(2)/sd)/2 
   if (!lower.tail) p=1-p;    return(p)
 }

@@ -7,8 +7,9 @@ perm.cor.test(x, y = NULL, alternative = c("two.sided", "less", "greater"),
               method = c("pearson", "spearman"), num.sim = 20000)
 }
 \arguments{
-  \item{x}{Numeric vector of design variable.}
-  \item{y}{Numeric vector of response variable.}
+  \item{x}{Numeric vector of design variable if \code{y} is not \code{NULL}, 
+           or N by 2 data frame or matrix of design and response variables if \code{y} is \code{NULL}.}
+  \item{y}{Numeric vector of response variable, and should be \code{NULL} if \code{x} is an N by 2 data frame or matrix.}
   \item{alternative}{A character string specifying the alternative hypothesis, and
      must be one of \code{"two.sided"} (default), \code{"greater"} or \code{"less"}.  
      Only the initial letter needs to be specified.}
