@@ -1,4 +1,4 @@
-c54bb91d416f00a78477f35e3115294d *DESCRIPTION
+347ead6733d7c0758cfc47a6e809a88e *DESCRIPTION
 9a46d5a6a814dd6959aa8c5c952419a4 *NAMESPACE
 0fe4d1ae173becc65f95f29582f1817b *R/CI.t.test.R
 9d0c575c2da4b3fb9ca1626bbc3fe893 *R/abbreviation.R
@@ -17,14 +17,14 @@ a16452668f87a6f1b0cc8fc3ebf2ffab *R/plotVector.R
 4b42eb4dcebb8f57f53605bc20d9ed05 *R/ptriang.R
 82a1db1561cae6b630008632818d5980 *R/qlaplace.R
 833c7873b2e437042279e9085fb6df4a *R/qtriang.R
-b9d37813b25696b0216207c7965f3e85 *R/quantileCI.R
+9526bd4cbf0ae092b7acef777b42a0b2 *R/quantileCI.R
 c7ca9b3aa01ba20500b1a6c1bc04ecf0 *R/rlaplace.R
 8edbe4d9e338948eccdb3d24f3a80961 *R/rmd.test.R
 823aac4260496e43dceae5a28df08a3e *R/rtriang.R
 c94219107b12a996e16f7474c3ef9bfb *R/score.R
 052ed1e590294bea852504e727d31974 *R/siegel.test.R
 938f90c91d91bdd82c0aef3f623128d6 *R/truncHist.R
-b321afa51bd64554366d34a9c5978d79 *build/partial.rdb
+37a14ebaaaecdbf78b03e174b5683d1f *build/partial.rdb
 1ec95d94a7018a1e0f2aec5ae15960a1 *man/CI.t.test.Rd
 24508250f6bf38d48881be8c8fa94416 *man/abbreviation.Rd
 06994a902193fb2b8f0d5512eb578473 *man/dlaplace.Rd

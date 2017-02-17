@@ -20,12 +20,12 @@ function( x, probs = 0.5, conf.level = 0.95 ) {
   CI = NULL
   for ( k in 1:length(probs) )   {
      delta <- (max(x)-min(x))/1e10
-     xgrid <- c(x, x+delta, x-delta)
+     xgrid <- c(x, x+delta, x-delta, -Inf, Inf)
      value.in.CI <- rep(NA, length(xgrid))
      for (iii in 1:length(xgrid)) {
-        x1 <- c( sum( x<xgrid[iii] ), sum( x>xgrid[iii] ) ); n <- sum(x1)
+        x1 <- c( sum( x<xgrid[iii] ), sum( x>xgrid[iii] ) )
         value.in.CI[iii] <-
-           binom.test(x1, n, probs[k], alternative = "two.sided", conf.level)$p.value>=1-conf.level
+           binom.test(x1, p=probs[k], alternative = "two.sided", conf.level=conf.level)$p.value>=1-conf.level
      }
      CI <- rbind( CI,  c( min( xgrid[value.in.CI] ), max( xgrid[value.in.CI] ) ) )
   }
