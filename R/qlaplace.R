@@ -8,7 +8,7 @@ function(p, mean=0, sd=1, lower.tail=TRUE) {
   # example:  # 5th, 15th, 25th, ..., 95th percentiles from a Laplace( 50, 10 ) distribution.
   #           qlaplace( seq( 0.05, 0.95, length.out=11 ), 50, 10 )
   if (!is.numeric(p))  stop("'p' must be numeric.")
-  if (p<0 | p>1)  stop("'p' must be between 0 and 1.")
+  if (min(p)<0 | max(p)>1)  stop("'p' must be between 0 and 1.")
   if (!is.numeric(mean))  stop("'mean' must be numeric.")
   if (!is.numeric(sd))  stop("'sd' must be numeric.")
   if (sd<0)  stop("'sd' cannot be negative.")

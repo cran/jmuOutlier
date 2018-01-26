@@ -14,9 +14,6 @@ vector addition, and Fourier analysis; and includes functions related to the
 Laplace (double exponential) and triangular distributions.
 Performs power calculations for the binomial test.}
 \details{
-The DESCRIPTION file:
-\packageDESCRIPTION{jmuOutlier}
-\packageIndices{jmuOutlier}
 
 \strong{(I)} Permutation tests
 \itemize{
