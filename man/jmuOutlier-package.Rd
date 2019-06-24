@@ -33,6 +33,7 @@ the ratio of the mean of the absolute value of the deviances, using two datasets
 }
 \strong{(III)} Graphs
 \itemize{
+\item{\code{\link{coin.toss}} illustrates the Law of Large Numbers for proportions.}
 \item{\code{\link{fourier}} determines the Fourier approximation for any function on domain \eqn{(0, 2\pi)} 
 and then graphs both the function and the approximation.}
 \item{\code{\link{lineGraph}} constructs a line graph on a vector of numerical observations.}
@@ -57,6 +58,7 @@ some extreme outliers.}
 \itemize{
 \item{\code{\link{abbreviation}} determines if one character variable is an abbreviation among a 
          selection of other character variables.}
+\item{\code{\link{latin}} generates a Latin square.}
 \item{\code{\link{power.binom.test}} computes the power of the binomial test of a simple null hypothesis 
          about a population median.}
 \item{\code{\link{score}} generates van der Waerden scores (i.e., normal quantiles) and exponential 
