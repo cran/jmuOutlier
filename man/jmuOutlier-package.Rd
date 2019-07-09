@@ -1,5 +1,4 @@
 \name{jmuOutlier-package}
-\alias{jmuOutlier-package}
 \alias{jmuOutlier}
 \docType{package}
 \title{Permutation Tests for Nonparametric Statistics
@@ -14,7 +13,6 @@ vector addition, and Fourier analysis; and includes functions related to the
 Laplace (double exponential) and triangular distributions.
 Performs power calculations for the binomial test.}
 \details{
-
 \strong{(I)} Permutation tests
 \itemize{
 \item{\code{\link{perm.cor.test}} performs a permutation test based on Pearson and Spearman correlations.}
@@ -54,7 +52,12 @@ some extreme outliers.}
           give the density, the distribution function, the quantile function, and random deviates, respectively,
           of the triangular distribution.}
 }
-\strong{(V)} Additional functions
+\strong{(V)} Reading datasets
+\itemize{
+\item{\code{\link{read.table2}} reads table of data from author's website.}
+\item{\code{\link{scan2}} scans data from author's website.}
+}
+\strong{(VI)} Additional functions
 \itemize{
 \item{\code{\link{abbreviation}} determines if one character variable is an abbreviation among a 
          selection of other character variables.}
@@ -65,20 +68,15 @@ some extreme outliers.}
       (similar to Savage) scores.}
 }
 }
-\author{
-\packageAuthor{jmuOutlier}
-
-Maintainer: \packageMaintainer{jmuOutlier}
-}
+\author{Steven T. Garren, James Madison University, Harrisonburg, Virginia, USA}
 \references{
 Higgins, J. J. (2004) \emph{Introduction to Modern Nonparametric Statistics}.
-
-Larson, R. (2013) \emph{Elementary Linear Algebra}, 7th edition.
 }
 \keyword{ Nonparametric statistics }
 \keyword{ Fourier analysis }
 \keyword{ Power }
-%\seealso{ }
+\seealso{\emph{R}-package \code{\link[coin]{coin}} for additional permutation tests,
+and \emph{R}-package \code{\link[fastGraph]{fastGraph}}.}
 \examples{
 fourier (function(x){ (x-pi)^3 }, 4 )
 x = rtriang(20,50) ;  list(x) ;  perm.test( x, mu=25, stat=median )

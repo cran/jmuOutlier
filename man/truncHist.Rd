@@ -22,7 +22,13 @@ truncHist(x, xmin = NULL, xmax = NULL, trim = 0.025, ...)
 
 \seealso{\code{\link[graphics]{hist}}}
 \examples{
-x = rnorm(1000) ;   head(x) ;   tail(x) ;   truncHist(x)
-y = rcauchy(1000) ; head(y) ;   tail(y) ;   truncHist(y)
+mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
+
+x1 = rnorm(1000) ;   c( head(x1), tail(x1)) ;   truncHist(x1, main="Normal data; first simulation")
+x2 = rnorm(1000) ;   c( head(x2), tail(x2)) ;   truncHist(x2, main="Normal data; second simulation")
+y1 = rcauchy(1000) ; c( head(y1), tail(y1)) ;   truncHist(y1, main="Cauchy data; first simulation")
+y2 = rcauchy(1000) ; c( head(y2), tail(y2)) ;   truncHist(y2, main="Cauchy data; second simulation")
+
+par( mfrow = mfrow.old )
 }
 \keyword{ Histogram }

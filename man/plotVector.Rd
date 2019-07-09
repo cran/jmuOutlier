@@ -38,6 +38,8 @@ plotVector(x1, y1, x2 = NULL, y2 = NULL, add.vectors = TRUE,
 
 \seealso{ \code{\link[graphics]{plot}} and \code{\link[graphics]{curve}}. }
 \examples{
+mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
+
 # Vectors (2,8) and (4,-3) and their vector sum.
      plotVector( 2, 8, 4, -3 ) 
      
@@ -50,7 +52,6 @@ plotVector(x1, y1, x2 = NULL, y2 = NULL, add.vectors = TRUE,
 # Vectors (2,3) and (5,-4)
      plotVector( 2, 3, 5, -4, add=FALSE, usr=c( -5, 5, -4, 7) )
 
-# Vectors (2,3) and (-5,4) and their vector sum.
-     plotVector( 2, 3, -5, 4, usr=c( -5, 5, -4, 7 ) )
+par( mfrow = mfrow.old )
 }
 \keyword{ Vector }

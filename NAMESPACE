@@ -5,4 +5,4 @@ importFrom("stats", "dnorm", "dbinom", "pbinom", "quantile", "runif", "rexp", "p
            "pt", "pchisq", "pf", "punif", "pgeom", "ppois", "rbinom")
 importFrom("graphics", "lines")
 importFrom("stats", "binom.test", "integrate", "median", "qbinom", "qnorm", "qt", "var")
-importFrom("utils", "combn")
+importFrom("utils", "combn", "read.table")

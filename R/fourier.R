@@ -14,10 +14,11 @@ function( f, order=3, ... ) {
   #     >  fourier( function(x){ (x-pi) }, 5 )
    if (!is.function(f))  stop("'f' must be a function.")
    if (!is.function(f))  stop("'f' must be a function.")
-   if (!is.numeric(order))  stop("'order' must be an integer.")
+   if (!is.numeric(order))  stop("'order' must be a positive integer.")
    if (length(order)!=1)  stop("'order' must be a scalar.")
-   if ( floor(order) != ceiling(order) )  stop("'order' must be an integer.")
-   lwd=4; font=2; font.lab=2; las=1; cex.lab=2; cex.axis=1.8; cex.main=2
+   if ( floor(order) != ceiling(order) )  stop("'order' must be a positive integer.")
+   if ( order < 1 ) stop("'order' must be a positive integer.")
+   lwd=4; font=2; font.lab=2; las=1; cex.lab=2; cex.axis=1.8; cex.main=1.5
    subdivisions=1e4; tol=1e-13
    a0 = integrate( f, 0, 2*pi, subdivisions=subdivisions )$value / pi ;  a <- b <- NULL
    for ( i in 1:order ) {

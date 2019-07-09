@@ -24,8 +24,13 @@ lineGraph(x, freq = TRUE, prob = NULL, col = "red", ...)
 
 \seealso{\code{\link[graphics]{hist}}} 
 \examples{
-lineGraph( c( rep(6,4), rep(9,7), rep(3,5), 5, 8, 8 ) )
-lineGraph( c( rep(6,4), rep(9,7), rep(3,5), 5, 8, 8 ), freq=FALSE )
-lineGraph( 11:14, , c( 12, 9, 17, 5 ) ) }
+mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
 
+lineGraph( c( rep(6,4), rep(9,7), rep(3,5), 5, 8, 8 ) )
+lineGraph( c( rep(6,4), rep(9,7), rep(3,5), 5, 8, 8 ), FALSE, col="purple" )
+lineGraph( 11:14, , c( 12, 9, 17, 5 ), col="blue" )
+lineGraph( 0:10, FALSE, dbinom(0:10,10,0.4), col="darkgreen", 
+   main="Binomial(n=10,p=0.4) probabilities" )
+
+par( mfrow = mfrow.old )}
 \keyword{ Line graph }
