@@ -28,8 +28,8 @@ where \eqn{\mu} is the mean of the distribution and \eqn{\sigma} is the standard
 \seealso{\code{\link{dlaplace}}, \code{\link{qlaplace}}, and \code{\link{rlaplace}}.}
 \examples{
 plaplace( seq( 20, 80, length.out=11 ), 50, 10 )
-plaplace( seq( 20, 80, length.out=11 ), 50, 10, FALSE )
 
+plaplace( seq( 20, 80, length.out=11 ), 50, 10, FALSE )
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

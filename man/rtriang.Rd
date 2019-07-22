@@ -22,5 +22,6 @@ rtriang(n, min = 0, max = 1)
 \seealso{\code{\link{dtriang}}, \code{\link{ptriang}}, and \code{\link{qtriang}}.}
 \examples{
 # 20 random variates from a Triangular( 100, 200 ) distribution.
+
 rtriang( 20, 100, 200 )  }
 \keyword{ Triangular distribution }

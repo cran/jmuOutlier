@@ -78,8 +78,13 @@ Higgins, J. J. (2004) \emph{Introduction to Modern Nonparametric Statistics}.
 \seealso{\emph{R}-package \code{\link[coin]{coin}} for additional permutation tests,
 and \emph{R}-package \code{\link[fastGraph]{fastGraph}}.}
 \examples{
-fourier (function(x){ (x-pi)^3 }, 4 )
-x = rtriang(20,50) ;  list(x) ;  perm.test( x, mu=25, stat=median )
+print( x <- rtriang(20,50) ) 
+
+perm.test( x, mu=25, stat=median )
+
 quantileCI( x, c(0.25, 0.5, 0.75)  )
+
 power.binom.test( 20, 0.05, "less", 47, plaplace, 45.2, 3.7 )
+
+fourier (function(x){ (x-pi)^3 }, 4 )
 }

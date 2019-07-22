@@ -37,6 +37,8 @@ consider using \code{\link[stats]{ansari.test}} instead.}
 
 \seealso{\code{\link[stats]{ansari.test}}, \code{\link{rmd.test}}, and \code{\link{perm.test}}}
 \examples{
+# The same data are used in the following two commands.
+
 siegel.test( c(13, 34, 2, 19, 49, 63), c(17, 29, 22) )
 siegel.test( c(13, 34, 2, 19, 49, 63), c(17, 29, 22), reverse=TRUE )
 }

@@ -23,14 +23,12 @@ plotEcdf(x, y = NULL, col = c("black", "red"))
 
 \seealso{\code{\link[stats]{plot.ecdf}}}
 \examples{
-mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
-
+par( mfrow=c(2,2) )
 plotEcdf( c(2,4,9,6), c(1,7,11,3,8) )
 plotEcdf( c(2,4,9,6), c(1,7,11,3), col=c("navyblue", "orange") ) 
-plotEcdf( c(11,5,3), c(3,7,9), col=c("salmon","darkgreen") )
-plotEcdf( c(15,19,11,4,6), c(17,5,7), col=c("tomato","purple") )
-
-par( mfrow = mfrow.old )
+plotEcdf( c(11,5,3), c(3,7,9), col=c("tomato","darkgreen") ) 
+plotEcdf( c(15,19,11,4,6), col="purple" ) 
+par( mfrow=c(1,1) )
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

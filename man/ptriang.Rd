@@ -27,5 +27,6 @@ ptriang(q, min = 0, max = 1, lower.tail = TRUE)
 \seealso{\code{\link{dtriang}}, \code{\link{qtriang}}, and \code{\link{rtriang}}.}
 \examples{
 ptriang( seq( 100, 200, length.out=11 ), 100, 200 )
+
 ptriang( seq( 100, 200, length.out=11 ), 100, 200, FALSE ) }
 \keyword{ Triangular distribution }

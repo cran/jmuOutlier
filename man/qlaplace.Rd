@@ -28,6 +28,7 @@ where \eqn{\mu} is the mean of the distribution and \eqn{\sigma} is the standard
 \seealso{\code{\link{dlaplace}}, \code{\link{plaplace}}, and \code{\link{rlaplace}}.}
 \examples{
 # 5th, 15th, 25th, ..., 95th percentiles from a Laplace( 50, 10 ) distribution.
+
 qlaplace( seq( 0.05, 0.95, length.out=11 ), 50, 10 )
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

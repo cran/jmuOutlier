@@ -50,10 +50,16 @@ and whether or not the \code{p.value} calculated was based on all permutations.
 %\seealso{ }
 \examples{
 # One-sample test
-x = rnorm(10,0.5) ;  list(x) ;  perm.test( x, stat=median )
+
+print( x <- rnorm(10,0.5) ) 
+
+perm.test( x, stat=median )
 
 # Two-sample unpaired test
-y = rnorm(13, 1 ) ;  list(y) ;  perm.test( x, y )
+
+print( y <- rnorm(13,1) )
+
+perm.test( x, y )
 }
 
 \keyword{ Permutation test }

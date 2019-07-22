@@ -34,14 +34,12 @@ as the number of coin tosses increases.}
 
 %\seealso{ }
 \examples{
-mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
-
+par( mfrow=c(2,2) )
 coin.toss( 600, 0.5 )
 coin.toss( 3e4, 0.4, )
 coin.toss( 3e4, 0.7, 1000, col=c("hotpink","turquoise") )
 coin.toss( 7e4, 0.3, 1000, TRUE, col=c("purple","green") )
-
-par( mfrow = mfrow.old )
+par( mfrow=c(1,1) )
 }
 
 \keyword{ Law of Large Numbers }

@@ -29,10 +29,10 @@ containing the true population mean, when the population mean is not \code{NULL}
 
 \seealso{\code{\link{CI.t.test}} }
 \examples{
-# Plot 50 90%confidence intervals, each based on 13 observations from a 
+# Plot fifty 90% confidence intervals, each based on 13 observations from a 
 #    Normal( mean=70, sd=10 ) distribution.
-CI = replicate( 50, CI.t.test( rnorm( 13, 70, 10 ), 0.9 ) )
-plotCI( CI, 70 )
+
+plotCI( replicate( 50, t.test( rnorm( 13, 70, 10 ), conf.level=0.9 )$conf.int ), 70 )
 }
 
 \keyword{ Confidence interval }

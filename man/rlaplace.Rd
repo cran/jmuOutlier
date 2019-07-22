@@ -27,6 +27,7 @@ where \eqn{\mu} is the mean of the distribution and \eqn{\sigma} is the standard
 \seealso{\code{\link{dlaplace}}, \code{\link{plaplace}}, and \code{\link{qlaplace}}.}
 \examples{
 # 20 random variates from a Laplace( 50, 10 ) distribution.
+
 rlaplace( 20, 50, 10 )
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

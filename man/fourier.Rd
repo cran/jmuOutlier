@@ -30,14 +30,12 @@ The equation is (constant) \eqn{+ a_1 cos(x) + ... + a_n cos(n x) + b_1 sin(x) +
 
 %\seealso{ }
 \examples{
-mfrow.old = par()$mfrow ;   par( mfrow = c( 2, 2 ) )
-
+par( mfrow=c(2,2) )
 fourier( function(x){ exp(-x)*(x-pi) }, 4 )
 fourier( function(x){ exp(-x) }, 7 )
 fourier( function(x){ (x-pi) }, 5 )
 fourier( function(x){ (x-pi)^2 } )
-
-par( mfrow = mfrow.old )
+par( mfrow=c(1,1) )
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

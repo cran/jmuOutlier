@@ -29,9 +29,10 @@ The global variable \code{course.number} may be entered as the value of the seco
 \author{Steven T. Garren, James Madison University, Harrisonburg, Virginia, USA}
 \seealso{\code{\link{read.table2}} and \code{\link[base]{scan}}}
 \examples{
-# The following are equivalent.
+# The following two commands are equivalent.
 
 scan2( "exercise2.7.txt", 324 )
+
 scan( "http://educ.jmu.edu/~garrenst/math324.dir/datasets/exercise2.7.txt", comment.char="#" )
 }
 \keyword{ scan }

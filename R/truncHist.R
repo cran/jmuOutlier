@@ -1,5 +1,5 @@
 truncHist <-
-function(x, xmin=NULL, xmax=NULL, trim=0.025, ...) {
+function(x, xmin=NULL, xmax=NULL, trim=0.025, main=NULL, xlab="x", ...) {
   # Produces a truncated histogram.
   # This function may be useful if data contain some extreme outliers.
   # 'x': Vector of numerical observations.
@@ -18,10 +18,15 @@ function(x, xmin=NULL, xmax=NULL, trim=0.025, ...) {
   if (trim<0 | trim>0.5)   stop("'trim' must be scalar numeric between 0 and 0.5.")
   if ( (is.null(xmin)& !is.null(xmax)) || (!is.null(xmin)&is.null(xmax)))
      stop("'xmin' and 'xmax' must both be NULL or must both be nonNULL.")
+  if ( !is.null(main) & !is.character(main) )  stop("'main' must be character or NULL.")
+  if ( !is.character(xlab) )  stop("'xlab' must be character.")
   if (is.null(xmin)&is.null(xmax)) 
      y <- sort(x)[(length(x)*trim): (length(x)*(1-trim))]
   if (!is.null(xmin)&!is.null(xmax))  {
      if (xmin >= xmax) stop("'xmin' cannot be as large as or larger than 'xmax'.")
      y <- x[ x>xmin & x<xmax ]  }
-  hist(y, ...)
+  if ( is.null(main) ) {
+     main = paste("Truncated Histogram of", xlab)
+     if (trim<=0)  main = paste("Histogram of", xlab) }
+  hist(y, main=main, xlab=xlab, ...)
 }

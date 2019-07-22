@@ -35,9 +35,8 @@ The output states more details about the permutation test, such as the values of
 
 \seealso{\code{\link[stats]{cor}}, \code{\link[stats]{cor.test}}, and \code{\link{perm.test}}.}
 \examples{
-x = c( 4, 6, 8, 11 ) ;   y = c( 19, 44, 15, 13 )
-perm.cor.test( x, y, "less", "pearson" ) 
-perm.cor.test( x, y, "less", "spearman" )
+perm.cor.test( c( 4, 6, 8, 11 ), c( 19, 44, 15, 13 ), "less", "pearson" ) 
+perm.cor.test( c( 4, 6, 8, 11 ), c( 19, 44, 15, 13 ), "less", "spearman" )
 }
 \keyword{ Correlation }
 \keyword{ Permutation test }
