@@ -1,4 +1,4 @@
-aa5bd9715f2fda96874eb68006cec8c6 *DESCRIPTION
+22b928bf7d209f905538595e3a71d0f0 *DESCRIPTION
 263e2682754e04ea964dae4414d036be *NAMESPACE
 0fe4d1ae173becc65f95f29582f1817b *R/CI.t.test.R
 9d0c575c2da4b3fb9ca1626bbc3fe893 *R/abbreviation.R
@@ -49,11 +49,11 @@ e67df2e8b3599cfbf38e2a7ab420c663 *man/ptriang.Rd
 2118278ae833aa35ab161d649833ef6b *man/qlaplace.Rd
 932166c1153c53c8ec0e9070620f08ff *man/qtriang.Rd
 a81988c94e9880d3a5b3714cf35ce042 *man/quantileCI.Rd
-cd7a6f05bfec2b5ce7b4c014e48232d0 *man/read.table2.Rd
+d7fb3f105cb6fe8009fef6bca97551ca *man/read.table2.Rd
 3537b03c013cb82d0e24f3ffd95799b8 *man/rlaplace.Rd
 51a4b96b6d2c89f25723f3489dacb57e *man/rmd.test.Rd
 fdfae4291368abd8908a95f1ca3c0add *man/rtriang.Rd
-1b2bde18eae03a479bcc834ece5adaee *man/scan2.Rd
+f0ed43d47ba91e117de2bd6c1af5ebaa *man/scan2.Rd
 97bdfed03ec323d4037c4113523a8a65 *man/score.Rd
 86fbd241ff8042b64ad362c776ab685f *man/siegel.test.Rd
 76b274fb377d98a63afb4aa4a1ab17eb *man/truncHist.Rd

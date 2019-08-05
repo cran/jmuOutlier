@@ -27,10 +27,9 @@ The global variable \code{course.number} may be entered as the value of the seco
 \author{Steven T. Garren, James Madison University, Harrisonburg, Virginia, USA}
 \seealso{\code{\link[utils]{read.table}} and \code{\link{scan2}}}
 \examples{
-# The following two commands are equivalent.
+# The following two commands, when uncommented, are equivalent.
 
-read.table2( "ex6.1.txt", 321, header=TRUE )
+# read.table2( "ex6.1.txt", 321, header=TRUE )
 
-read.table( "http://educ.jmu.edu/~garrenst/math321.dir/datasets/ex6.1.txt", header=TRUE )
-}
+# read.table( "http://educ.jmu.edu/~garrenst/math321.dir/datasets/ex6.1.txt", header=TRUE )}
 \keyword{ read.table }
